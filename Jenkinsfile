@@ -9,7 +9,7 @@ node('git') {
 
 	        gitHubRelease organisation: "daniel-ellis",
 	                project: 'test-github-release',
-	                version: "release name",
+	                version: "release-name.${env.BUILD_NUMBER}",
 	                accessToken: "${env.accessToken}",
 	                assets: ["Artifact"],
 	                release: false,
