@@ -11,7 +11,7 @@ node('git') {
 	                project: 'test-github-release',
 	                version: "release-name.${env.BUILD_NUMBER}",
 	                accessToken: "${env.accessToken}",
-	                assets: ["Artifact"],
+	                assets: ["Artifact", "Artifact2"],
 	                release: false,
 	                targetCommit: "master"
     	}
