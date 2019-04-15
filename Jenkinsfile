@@ -11,7 +11,7 @@ node('git') {
 	                project: 'test-github-release',
 	                version: "release-name.${env.BUILD_NUMBER}",
 	                accessToken: "${env.accessToken}",
-	                assets: ["Artifact", "Artifact2"],
+	                assets: ["/Users/danellis/Desktop/tmpworkspace/nodeworkspace/workspace/test-release_master/folder/Artifact", "/Users/danellis/Desktop/tmpworkspace/nodeworkspace/workspace/test-release_master/folder/Artifact2"],
 	                release: false,
 	                targetCommit: "master"
     	}
